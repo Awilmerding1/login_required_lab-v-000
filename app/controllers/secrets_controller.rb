@@ -2,7 +2,7 @@ class SecretsController < ApplicationController
   before_action :require_login
   
   def show 
-    current_user
+    session[:name]
   end
   
   private 
