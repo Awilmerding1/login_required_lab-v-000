@@ -1,6 +1,6 @@
 <h1>Hi, <%= current_user %> </h1>
 
-<%= link_to "Secret Page", show_path(current_user) %>
+<%= link_to "Secret Page", show_path %>
 
 <form method='POST', action="/logout">
   <input name='logout' type="hidden">
