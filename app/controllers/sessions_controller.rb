@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     else
       name = params[:name]
       session[:name] = name
-       binding.pry
       render :welcome
     end
   end
