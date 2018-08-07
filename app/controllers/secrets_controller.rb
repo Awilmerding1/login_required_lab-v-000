@@ -8,7 +8,6 @@ class SecretsController < ApplicationController
   
   def require_login
     redirect_to '/login' unless session.include? :name
-    binding.pry
 	end
 
   
