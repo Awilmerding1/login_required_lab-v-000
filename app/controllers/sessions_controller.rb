@@ -10,7 +10,6 @@ class SessionsController < ApplicationController
     else
       name = params[:name]
       session[:name] = name
-      current_user = session[:name]
       render :welcome
     end
   end
