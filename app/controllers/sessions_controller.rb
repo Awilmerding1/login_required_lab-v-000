@@ -9,8 +9,8 @@ class SessionsController < ApplicationController
       redirect_to '/login'
     else
       name = params[:name]
-      binding.pry
       session[:name] = name
+       binding.pry
       render :welcome
     end
   end
